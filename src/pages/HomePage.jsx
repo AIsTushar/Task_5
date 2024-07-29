@@ -8,8 +8,6 @@ import InfiniteScrollTable from "../components/InfiniteScrollTable";
 import { generateUserData } from "../services/dataGenerator";
 import Button from "../components/Button";
 
-import sampleData from "../data/user.json";
-
 const HomePage = () => {
   const [data, setData] = useState([]);
   const [selectedRegion, setSelectedRegion] = useState("USA");
@@ -20,7 +18,6 @@ const HomePage = () => {
 
   useEffect(() => {
     fetchData();
-    // setData(sampleData);
   }, [selectedRegion, errorValue, seedValue, page]);
 
   const fetchData = () => {

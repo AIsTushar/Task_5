@@ -52,7 +52,7 @@ export const generateUserData = (region, errorCount, seed, page) => {
   const users = [];
   for (let i = 0; i < 20; i++) {
     const user = {
-      index: i + 1 + (page - 1) * 20,
+      // index: i + 1 + (page - 1) * 20,
       id: fakerInstance.string.uuid(),
       name: fakerInstance.person.fullName(),
       address: `${fakerInstance.location.streetAddress()}, ${fakerInstance.location.city()}, ${fakerInstance.location.state()}`,

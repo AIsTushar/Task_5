@@ -32,7 +32,7 @@ const InfiniteScrollTable = ({ data, fetchMoreData, hasMore }) => {
           {data.map((user, index) => {
             if (data.length === index + 1) {
               return (
-                <tr ref={lastRecordElementRef} key={user.id}>
+                <tr ref={lastRecordElementRef} key={index + 1}>
                   <td className="border px-4 py-2">{user.index}</td>
                   <td className="border px-4 py-2">{user.id}</td>
                   <td className="border px-4 py-2">{user.name}</td>
@@ -43,7 +43,7 @@ const InfiniteScrollTable = ({ data, fetchMoreData, hasMore }) => {
             } else {
               return (
                 <tr key={user.id}>
-                  <td className="border px-4 py-2">{user.index}</td>
+                  <td className="border px-4 py-2">{index + 1}</td>
                   <td className="border px-4 py-2">{user.id}</td>
                   <td className="border px-4 py-2">{user.name}</td>
                   <td className="border px-4 py-2">{user.address}</td>
