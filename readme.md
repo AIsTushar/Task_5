@@ -44,18 +44,6 @@ Optional requirement: add Export to CSV button (generate the number of pages whi
 
 Of course, errors should be "applied" before formatting/rendering/exporting.
 
-_How to submit the solution_
-
-Send to p.lebedev@itransition.com: 0) Full name.
-
-1. Link to the deployed project (you can use any hosting you find suitable).
-2. Link to the code.
-3. Recorded video: generation for different regions, infinite scrolling demo with 5-10 pages, change error number from 0 to 0.5, then to 5, then to 20, then to 1000 (data should be transformed to "noise"), then to 0. Change seed, demonstrate than reset seed to previous values restores data to previous state as well.
-
-**Deadline: 27.07.2024** (the same for the rest of tasks)
-
-YOU CAN (AND MUST) USE 3RD-PARTY LIBRARIES FOR DATA GENERATION (check some Faker ports).
-
 **Here is an example for #5**
 
 Let's say user opens the app and the default region is USA and app started with a random seed = 42, so he/she can get something like:
