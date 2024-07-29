@@ -66,8 +66,8 @@ const HomePage = () => {
   };
 
   const exportToCSV = (data) => {
-    const csvData = data.map((user) => ({
-      Index: user.index,
+    const csvData = data.map((user, index) => ({
+      Index: index + 1,
       ID: user.id,
       Name: user.name,
       Address: user.address,
